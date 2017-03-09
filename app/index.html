@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./toDoApp/layout/styles/layout.css">
+    <link rel="stylesheet" href="./toDoApp/layout/assets/layout.css">
     <meta charset="UTF-8">
     <title>To Do App Angular Version</title>
 </head>
@@ -19,11 +19,11 @@
 <body ng-app="toDoApp">
     <nav>
         <div class="nav-wrapper">
-            <a href="#!" class="brand-logo right">AngularJS App for the ToDo List</a>
+            <a href="#!" class="brand-logo right">AngularJS App for Errands</a>
             <ul class="left hide-on-med-and-down">
-                <li><a ui-sref="create">Create ToDo Task</a></li>
-                <li><a ui-sref="list">View Current ToDo Task</a></li>
-                <li><a ui-sref="completed">Completed ToDo Tasks</a></li>
+                <li><a ui-sref="create">Create An Errand</a></li>
+                <li><a ui-sref="list">View Current Errand</a></li>
+                <li><a ui-sref="complete">Completed Errand</a></li>
             </ul>
         </div>
     </nav>
@@ -41,13 +41,6 @@
 
 
     <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">To Do App 2017</h5>
-                </div>
-            </div>
-        </div>
         <div class="footer-copyright">
             <div class="container">
                 © 2017 Copyright Troll
@@ -57,19 +50,17 @@
 
     <script src="toDoApp/toDoApp.module.js"></script>
 
-<!--  Future connections   <script src="todoApp/features/list/list.module.js"></script>
+    <script src="toDoApp/features/list/list.module.js"></script>
     <script src="toDoApp/features/list/list.controller.js"></script>
     <script src="toDoApp/features/list/list.route.js"></script>
 
     <script src="toDoApp/features/create/create.module.js"></script>
     <script src="toDoApp/features/create/create.controller.js"></script>
     <script src="todoApp/features/create/create.route.js"></script>
- -->
+
     <script src="toDoApp/features/complete/complete.module.js"></script>
     <script src="toDoApp/features/complete/complete.controller.js"></script>
     <script src="toDoApp/features/complete/complete.route.js"></script>
-
-<!-- make links for create and list each needing a CONTROLLER, ROUTE AND MODULE -->
 
 
 
