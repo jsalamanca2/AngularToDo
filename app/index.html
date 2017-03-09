@@ -1,52 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="fragment" content="!">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./toDoApp/layout/assets/layout.css">
+
     <meta charset="UTF-8">
     <title>To Do App Angular Version</title>
 </head>
+    <style>
+        body{
+            background: blue;
+        }
+
+    </style>
+
 
 <body ng-app="toDoApp">
-    <nav>
-        <div class="nav-wrapper teal">
-            <a href="#!" class="brand-logo right">AngularJS App for Errands</a>
-            <ul class="left hide-on-med-and-down">
-                <li><a ui-sref="create">Create An Errand</a></li>
-                <li><a ui-sref="list">View Current Errand</a></li>
-                <li><a ui-sref="complete">Completed Errand</a></li>
-            </ul>
+    <nav class="nav nav-tabs" role="navigation">
+            <li role="presentation" class="navhead"><a ui-sref="create">Create</a></li>
+            <li role="presentation"><a ui-sref="list">List</a></li>
+            <li role="presentation"><a ui-sref="complete">Complete</a></li>
+        </nav>
+        <div class="views">
+            <ui-view></ui-view>
         </div>
-    </nav>
-    <br>
-    <br>
-
-
-
-    <ui-view>
-
-
-
-
-    </ui-view>
-
-
-    <footer class="page-footer teal">
-        <div class="footer-copyright">
-            <div class="container">
-                © 2017 Copyright Troll
-            </div>
-        </div>
-    </footer>
 
     <script src="toDoApp/toDoApp.module.js"></script>
 
