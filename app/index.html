@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="fragment" content="!">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./toDoApp/layout/styles/layout.css">
+    <meta charset="UTF-8">
+    <title>To Do App Angular Version</title>
+</head>
+
+<body ng-app="toDoApp">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo right">AngularJS App for the ToDo List</a>
+            <ul class="left hide-on-med-and-down">
+                <li><a ui-sref="create">Create ToDo Task</a></li>
+                <li><a ui-sref="list">View Current ToDo Task</a></li>
+                <li><a ui-sref="completed">Completed ToDo Tasks</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+
+
+
+    <ui-view>
+
+
+
+
+    </ui-view>
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">To Do App 2017</h5>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Copyright Troll
+            </div>
+        </div>
+    </footer>
+
+    <script src="toDoApp/toDoApp.module.js"></script>
+
+<!--  Future connections   <script src="todoApp/features/list/list.module.js"></script>
+    <script src="toDoApp/features/list/list.controller.js"></script>
+    <script src="toDoApp/features/list/list.route.js"></script>
+
+    <script src="toDoApp/features/create/create.module.js"></script>
+    <script src="toDoApp/features/create/create.controller.js"></script>
+    <script src="todoApp/features/create/create.route.js"></script>
+ -->
+    <script src="toDoApp/features/completed/completed.module.js"></script>
+    <script src="toDoApp/features/completed/completed.controller.js"></script>
+    <script src="toDoApp/features/completed/completed.route.js"></script>
+
+<!-- make links for create and list each needing a CONTROLLER, ROUTE AND MODULE -->
+
+
+
+</body>
+
+</html>
