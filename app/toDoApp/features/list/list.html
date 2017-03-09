@@ -1,1 +1,18 @@
-THe list
+<h1>Uncompleted Errands</h1>
+<div>Check to complete it</div>
+
+<form>
+    <h3>Due</h3>
+    <div ng-repeat = "todo in ListVM.due">
+        <input type="button" value="&#10004" ng-click="ListVM.setComplete(todo.id, todo.boolean)"/>
+        <label for="{{todo.id}}">{{todo.todo}}</label>
+        <span>Due date: {{todo.completeBy}}</span>
+    </div>
+
+    <h3>Overdue</h3>
+    <div ng-repeat = "todo in ListVM.overdue">
+        <input type="button" value="&#10004" ng-click="ListVM.setComplete(todo.id, todo.boolean)"/>
+        <label for="{{todo.id}}">{{todo.todo}}</label>
+        <span>Due date: {{todo.completeBy}}</span>
+    </div>
+</form>

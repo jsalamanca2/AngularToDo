@@ -1,1 +1,11 @@
-created!
+<h1>Create a New Errand/h1>
+<div>New list</div>
+<br>
+<form>
+    <input type="text" placeholder="What needs to be done" ng-model="CreateVM.data.todo">
+    <br><br>
+    <input type="text" placeholder="year-month-date" ng-model="CreateVM.data.completeDate"> :
+    <input type="text" placeholder="20:50" ng-model="CreateVM.data.completeTime">
+    <br><br>
+    <input type="button" value="submit" ng-click="CreateVM.createToDo()">
+</form>

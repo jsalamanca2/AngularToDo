@@ -16,5 +16,18 @@
   "bugs": {
     "url": "https://github.com/jsalamanca2/AngularToDo/issues"
   },
-  "homepage": "https://github.com/jsalamanca2/AngularToDo#readme"
+  "homepage": "https://github.com/jsalamanca2/AngularToDo#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.8.6"
+  },
+  "engines": {
+    "node": "6.6.0"
+  }
+
+
+
+
 }

@@ -1,1 +1,12 @@
-eyyyyy
+
+<h1>Completed Errands</h1>
+<div>Check if not done</div>
+
+<form>
+    <h3>Done</h3>
+    <div ng-repeat = "todo in CompleteVM.completed">
+        <input type="button" value="&#10004" ng-click="CompleteVM.setComplete(todo.id, todo.boolean)"/>
+        <label for="{{todo.id}}">{{todo.todo}}</label>
+        <span>Due date: {{todo.completeBy}}</span>
+    </div>
+</form>

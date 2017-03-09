@@ -20,6 +20,9 @@ db.once('open', function() {
     console.log('Connection Successful');
 });
 
+//put routes into API folder within app
+
+
 app.listen(PORT, function() {
     console.log('Server On Port: ' + PORT + "!")
 });
