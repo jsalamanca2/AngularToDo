@@ -3,7 +3,7 @@ angular
         //setting ui.router dependency
         'ui.router',
         //setting state dependencies to the main app module
-        'toDoApp.completed',
+        'toDoApp.complete',
         'toDoApp.list',
         'toDoApp.create'
     ]).config(appConfig);
